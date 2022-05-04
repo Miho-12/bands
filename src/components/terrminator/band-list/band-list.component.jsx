@@ -1,24 +1,23 @@
 import React from "react";
-import Terminator from "../terminator.component";
+import Band from "../band.component";
 
-const TerminatorList = ({ models }) => {
-  /*const terminatorComponents = models.map((model) => {
+const BandList = ({ models }) => {
+  /*const BandrComponents = models.map((model) => {
     return (
-      <Terminator
+      <Band
         key={model.id}
         id={model.id}
         name={model.name}
-        serialNumber={model.serialNumber}
       />
     );
   }); 
-  //és return div terminatorComponents div
+  //és return div BandComponents div
   */
   return (
     <div>
       {models.map((model) => {
         return (
-          <Terminator
+          <Band
             key={model.id}
             id={model.id}
             name={model.name}
@@ -32,4 +31,4 @@ const TerminatorList = ({ models }) => {
   );
 };
 
-export default TerminatorList;
+export default BandList;
